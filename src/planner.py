@@ -3,7 +3,6 @@
 This is the code you will test in the Week 4 lab.
 """
 
-
 def days_left(due, today):
     """Return how many days are left from today until the due date.
 
@@ -18,7 +17,7 @@ def is_urgent(due, today, limit=2):
     A task that is already overdue is not urgent. It is late.
     """
     left = days_left(due, today)
-    return 0 <= left < limit
+    return 0 <= left <= limit # <= includes the limit 
 
 
 def sort_by_due(tasks):
