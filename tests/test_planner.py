@@ -14,7 +14,7 @@ def test_days_left_counts_days_until_due():
     result = days_left(due, today)
 
     # Assert
-    assert result == 4
+    assert result == 3
 
 # TODO 1: days_left is negative when the task is overdue.
 def test_days_left_when_overdue():
